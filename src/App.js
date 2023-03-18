@@ -1,6 +1,7 @@
-import Expenses from "./components/Expenses"
-function App() {
-  const expenses = [
+import Expenses from "./components/Expenses/Expenses"
+import NewExpense from "./components/NewExpense/NewExpense";
+const  App = () =>{
+  const expenses = [  // defining the expense items
     {
       title: "Toilet Paper",
       amount: 94.12,
@@ -28,6 +29,7 @@ function App() {
 
     <div>
       <h2>Let's Get Stared</h2>
+      <NewExpense/>
       <Expenses items={expenses}/>
     </div>
   );
