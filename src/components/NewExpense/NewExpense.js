@@ -14,8 +14,6 @@ const NewExpense = (props) => {
 
   const [visiblity, setVisbility] = useState(false);
 
-  let show;
-
   
   const expenseHandler = () => {
     setVisbility(true);
